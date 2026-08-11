@@ -1,0 +1,293 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* Brand colour section */
+:root {
+--brandcolour:#38BDF8;
+--highlighter:#FFFFFF;
+--subcardcolour:#1E293B;
+}
+/* nav section design */
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width:100vw;
+    padding: 1rem 2rem;
+    background-color: #1E293B;
+    gap:3rem;
+}
+/* logo section */
+nav .Logo{
+    letter-spacing: 1.2px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:var(--brandcolour);
+    text-shadow: 2px 3px 6px var(--brandcolour);
+}
+/* link parent section */
+nav ul{
+    display: flex;
+    gap:2rem;
+}
+/* link section */
+nav ul li{
+    list-style: none;
+    transition: 1s;
+}
+nav ul li a{
+    text-decoration: none;
+    color:var(--highlighter);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul li:hover{
+    text-shadow: 2px 3px 7px var(--highlighter);
+    transition: 0.5s;
+}
+/* body section  start */
+body{
+    background-color:rgb(15,23,42) ;
+}
+/* header section part */
+.Heading{
+width:max-content;
+margin:auto;
+}
+.Heading h1{
+    color:var(--highlighter);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 3px 10px var(--highlighter);
+    font-size: 35px;
+    margin: 10px auto;
+}
+.Heading p{
+    color: var(--highlighter);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:15px;
+    opacity: 0.6;
+    letter-spacing: 1.5px;
+    margin: 10px 0px;
+}
+/* parent of cards */
+.card-div-parent{
+    width:90%;
+    margin:auto;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+/* card left */
+.card-div-parent .CardLeft{
+    width: 280px;
+    height:450px;
+    border-radius: 10px;
+    background-color: var(--subcardcolour);
+}
+.card-div-parent .CardLeft .uppercl{
+    width:200px;
+    border-bottom:1px solid var(--highlighter) ;
+    margin: auto;
+}
+.card-div-parent .CardLeft .uppercl p{
+    color:var(--highlighter);
+    font-family: sans-serif;
+    text-align: center;
+    margin: 10px auto;
+}
+.card-div-parent .CardLeft .uppercl .clnumber{
+    font-size: 50px;
+    font-weight:bolder;
+    margin:5px;
+}
+/* card left middle design */
+.card-div-parent .middlecl{
+    width:200px;
+    margin: 20px auto;
+}
+
+.card-div-parent .middlecl p{
+    color: var(--highlighter);
+    font-size: 15px;
+    font-family: sans-serif;
+    opacity: 0.9;
+    text-align: center;
+    margin:10px auto;
+}
+.card-div-parent .middlecl .blur{
+    opacity: 0.1;
+}
+/* card left button design */
+.card-div-parent .clbutton {
+    width:max-content;
+    margin:  20px auto;    
+}
+.card-div-parent .clbutton button{
+    padding:  0.8rem 2rem;
+    border:2px solid var(--brandcolour);
+    color:var(--brandcolour);
+    background-color: var(--subcardcolour);
+    border-radius: 5px;
+    margin:50px;
+    transition: 0.5s;
+}
+/* card left design end */
+/* Main card */
+.card-div-parent .MainCard{
+ width:350px;
+ height:550px;
+    border-radius: 10px;
+    background-color: var(--brandcolour);
+}
+/* main card heading design */
+.card-div-parent .MainCard .mctitle{
+    width:max-content;
+    margin: 20px auto;
+     font-family: sans-serif;
+    background-color:var(--highlighter);
+    color:var(--brandcolour);
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.card-div-parent .MainCard .upperMC{
+    width:250px;
+    border-bottom:1px solid var(--subcardcolour);
+    text-align: center;
+    margin: 30px auto;
+}
+.card-div-parent .MainCard .upperMC p{
+ font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    margin:10px auto;
+    font-weight: bolder;
+}
+.card-div-parent .MainCard .upperMC .mcnumber{
+    font-size: 50px;
+    font-weight: 700;
+}
+.card-div-parent .MainCard .upperMC .mcmonth{
+    opacity: 0.6;
+}
+/* main card middle design */
+.card-div-parent .MainCard .middleMC{
+      width:250px;
+      text-align: center;
+      padding: 10px 30px;
+      margin: auto;
+}
+.card-div-parent .MainCard .middleMC p{
+     color:black;
+    font-size: 17px;
+    font-family: sans-serif;
+    text-align: center;
+    margin:10px auto;
+    font-weight: bold;
+    margin:15px 0;
+}
+.card-div-parent .MainCard .middleMC .blurMC{
+    opacity: 0.5;
+}
+/* main card button design */
+.card-div-parent .MainCard .mainbutton{
+     width:max-content;
+    margin:  20px auto;  
+}
+.card-div-parent .MainCard .mainbutton  button{
+     padding:  0.8rem 2rem;
+    border:2px solid black;
+    color:var(--highlighter);
+    background-color: black;
+    border-radius: 5px;
+    margin:20px 0px;   
+    transition: 0.5s;
+}
+/* Card Right */
+.card-div-parent .CardRight{
+ width:280px;
+ height:450px;
+    border-radius: 10px;
+    background-color: var(--subcardcolour);
+}
+/* card left upper design */
+.card-div-parent .CardRight .uppercr{
+      width:200px;
+    border-bottom:1px solid var(--highlighter) ;
+    margin: auto;
+}
+.card-div-parent .CardRight .uppercr p{
+        color:var(--highlighter);
+    font-family: sans-serif;
+    text-align: center;
+    margin: 10px auto;
+}
+.card-div-parent .CardRight .uppercr .crnumber{
+        font-size: 50px;
+    font-weight:bolder;
+    margin:5px;
+}
+/* card right middle design */
+.card-div-parent .CardRight .middlecr{
+  width:200px;
+    margin: 20px auto;
+}
+.card-div-parent .CardRight .middlecr p{
+       color: var(--highlighter);
+    font-size: 15px;
+    font-family: sans-serif;
+    opacity: 0.9;
+    text-align: center;
+    margin:10px auto;
+}
+/* card right button design */
+.card-div-parent .CardRight .crbutton{
+      width:max-content;
+    margin:  20px auto;   
+}
+.card-div-parent .CardRight .crbutton button{
+        padding:  0.8rem 2rem;
+    border:2px solid var(--brandcolour);
+    color:var(--brandcolour);
+    background-color: var(--subcardcolour);
+    border-radius: 5px;
+    margin:50px;
+    transition:0.5s;
+}
+/* animation section */
+/* Button animation of card left */
+.card-div-parent .clbutton button:hover{
+    color:white;
+    border-color: white;
+    box-shadow: 2px 2px 8px white;
+    transition:0.5;
+}
+/* Button animation of main card */
+.card-div-parent .MainCard .mainbutton  button:hover{
+    border-color: white;
+    box-shadow: 2px 2px 8px white;
+    transition: 0.5s;
+}
+/* Button animation of card right */
+.card-div-parent .CardRight .crbutton button:hover{
+     color:white;
+    border-color: white;
+    box-shadow: 2px 2px 8px white;
+    transition:0.5;
+}
+
+@media (max-width: 768px) {
+  .card-div-parent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-div-parent .CardLeft,
+  .card-div-parent .CardRight,
+  .card-div-parent .MainCard {
+    width: 90%;
+    height: auto;
+  }
+}
